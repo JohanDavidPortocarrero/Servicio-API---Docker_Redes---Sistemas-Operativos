@@ -17,7 +17,9 @@ services:
       POSTGRES_DB: 'root'
     networks:
       - 'Network1'
+    volumes:
+      - ~/Users/jhoan david/Documents/volumen -docker/data:/var/lib/postgresql/data
 networks:
   Network1:
-    drive: 'bridge'
+    driver: 'bridge'
 
